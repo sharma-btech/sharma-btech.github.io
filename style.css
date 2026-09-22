@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f7fb;
+    color: #222;
+}
+
+/* Navigation */
+nav {
+    background-color: #111827;
+    padding: 18px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00aaff;
+}
+
+/* Sections */
+section {
+    padding: 70px 20px;
+    text-align: center;
+    min-height: 300px;
+}
+
+#home {
+    background-color: #eaf4ff;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 15px;
+}
+
+h2 {
+    color: #0066cc;
+    font-size: 30px;
+}
+
+/* Profile Photo */
+img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #0066cc;
+    margin: 20px;
+}
+
+/* Skills */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    background-color: white;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Projects and Certificates */
+.project,
+.certificate {
+    background-color: white;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+.project h3,
+.certificate h3 {
+    color: #0066cc;
+}
+
+/* Contact Button */
+.contact-btn {
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.contact-btn:hover {
+    background-color: #004999;
+}
+/* Dark Mode */
+body.dark-mode {
+    background-color: #111827;
+    color: white;
+}
+
+body.dark-mode #home {
+    background-color: #1f2937;
+}
+
+body.dark-mode .project,
+body.dark-mode .certificate,
+body.dark-mode li {
+    background-color: #374151;
+    color: white;
+}
+
+body.dark-mode h2 {
+    color: #60a5fa;
+}
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    nav {
+        padding: 12px 5px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .project,
+    .certificate {
+        width: 90%;
+    }
+
+    li {
+        padding: 10px 15px;
+        margin: 5px;
+    }
+
+    #darkModeBtn {
+        margin-top: 8px;
+    }
+}
+.project-btn {
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.project-btn:hover {
+    background-color: #004999;
+}
+
+body.dark-mode .project-btn {
+    background-color: #2563eb;
+}
+.resume-btn {
+    display: inline-block;
+    background-color: #111827;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.resume-btn:hover {
+    background-color: #0066cc;
+}
